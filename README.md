@@ -1,5 +1,5 @@
 # MiniNotion
-# Projektbeschreibung
+## Projektbeschreibung
 MiniNotion ist eine Webanwendung die zur persönlichen Verwaltung von Notizen genutzt wird.
 
 # Team
