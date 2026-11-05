@@ -9,7 +9,7 @@ const loading = ref(true)
 const error = ref<string | null>(null)
 
 // Die lokale Backend-URL für M3
-const API_URL = 'http://localhost:8080/api/notes'
+const API_URL = 'https://mininotion-backend.onrender.com/api/notes'
 
 const fetchNotes = async () => {
   try {
