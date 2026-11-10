@@ -19,8 +19,10 @@ const error = ref<string | null>(null)
 const newTitle = ref('')
 const newContent = ref('')
 
-// Backend-URL (aktuell live auf Render)
-const API_URL = `${import.meta.env.VITE_BACKEND_BASE_URL || 'http://localhost:8080'}/api/notes`
+const API_URL = import.meta.env.VITE_BACKEND_BASE_URL
+  ? `${import.meta.env.VITE_BACKEND_BASE_URL}/api/notes`
+  : '/api/notes'
+
 // GET: Notizen laden
 const fetchNotes = async () => {
   try {
